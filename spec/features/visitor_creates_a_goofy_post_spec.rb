@@ -2,8 +2,8 @@ require 'spec_helper'
 
 feature "Creating a goofy post" do
   scenario "Visitor creates a new goofy post from the homepage 'new' link" do
-    ruby_category = FactoryGirl.create(:ruby_category)
-    ruby_post = FactoryGirl.create(:ruby_post, category: ruby_category)
+    ruby_category = FactoryBot.create(:ruby_category)
+    ruby_post = FactoryBot.create(:ruby_post, category: ruby_category)
 
     visit root_path
     expect(page).not_to have_content("this is a feature spec")
@@ -18,4 +18,3 @@ feature "Creating a goofy post" do
     expect(page).to have_css('li.goofy')
   end
 end
-

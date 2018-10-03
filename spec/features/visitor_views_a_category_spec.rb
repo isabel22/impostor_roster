@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 feature "Viewing categories" do
-  let!(:ruby_post) { FactoryGirl.create(:ruby_post) }
-  let!(:med_post) { FactoryGirl.create(:medical_post) }
+  let!(:ruby_post) { FactoryBot.create(:ruby_post) }
+  let!(:med_post) { FactoryBot.create(:medical_post) }
 
   scenario "Visitor goes to categories list page" do
     visit categories_path

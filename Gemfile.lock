@@ -98,10 +98,10 @@ GEM
     erubis (2.7.0)
     eventmachine (1.2.5)
     execjs (2.7.0)
-    factory_girl (4.9.0)
+    factory_bot (4.11.1)
       activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
+    factory_bot_rails (4.11.1)
+      factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     ffi (1.9.18)
     formatador (0.2.5)
@@ -310,7 +310,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   database_cleaner
   dotenv-rails
-  factory_girl_rails
+  factory_bot_rails
   friendly_id (~> 5.0.0)
   guard-livereload
   heroku-deflater
@@ -339,4 +339,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.15.4
+   1.16.5

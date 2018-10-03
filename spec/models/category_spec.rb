@@ -3,7 +3,7 @@ require 'pry'
 
 describe Category do
 
-  let(:category) { FactoryGirl.build(:ruby_category) }
+  let(:category) { FactoryBot.build(:ruby_category) }
 
   describe "has a #name" do
     it { should respond_to(:name) }
@@ -53,7 +53,7 @@ describe Category do
   describe "associations" do
 
     it "has many posts" do
-      post = FactoryGirl.create(:ruby_post, category: category)
+      post = FactoryBot.create(:ruby_post, category: category)
       expect(category.posts).not_to be_empty
     end
   end

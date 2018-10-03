@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', groups: [:development, :test] 
+gem 'dotenv-rails', groups: [:development, :test]
 
 ruby '2.3.1'
 
@@ -57,7 +57,7 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'database_cleaner'
 end
 

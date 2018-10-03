@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Post do
 
-  let(:post) { FactoryGirl.build(:ruby_post) }
+  let(:post) { FactoryBot.build(:ruby_post) }
 
   describe "Factory" do
     it "is valid" do

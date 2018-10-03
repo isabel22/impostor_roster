@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post do
     factory :ruby_post do
       association :category, factory: :ruby_category
