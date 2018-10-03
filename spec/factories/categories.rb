@@ -1,11 +1,11 @@
 FactoryBot.define do
   factory :category do
     factory :ruby_category do
-      name "Ruby"
+      name { "Ruby" }
     end
 
     factory :medical_category do
-      name "Medicine"
+      name { "Medicine" }
     end
   end
 end
